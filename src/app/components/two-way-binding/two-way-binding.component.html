@@ -1,0 +1,22 @@
+<div class="class">
+  <h2>app-two-way-binding</h2>
+
+  <form action="">
+    <input type="text" [(ngModel)]="name" name="name" />
+    <input type="number" [(ngModel)]="age" name="age" />
+    <select name="" id="" [(ngModel)]="role" name="role">
+      <option value="1">Primeira opção</option>
+      <option value="2">Essa é outra opção</option>
+      <option value="3">Mais uma opção</option>
+    </select>
+
+    <input type="submit" value="Enviar" />
+  </form>
+
+  <div>
+    <p>
+      O nome do cara é:{{ name }}, ele tem {{ age }} anos e o nível de acesso é
+      {{ role }}.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="class">
+  <h1>Nome: {{ name }}</h1>
+  <p>first-component works!</p>
+  <p>
+    Meu nome é {{ info.nome }}, tenho {{ info.idade }} e atualmente sou
+    {{ info.profissao }}.
+  </p>
+
+  <h3>Renderizando listas</h3>
+  <ul>
+    <li *ngFor="let tec of info.tecnologias">
+      {{ tec || "Não informado" }}
+    </li>
+  </ul>
+</div>

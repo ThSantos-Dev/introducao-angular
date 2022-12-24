@@ -1,0 +1,15 @@
+<div class="class">
+  <h3>Renderizando listas</h3>
+
+  <h4>Animais</h4>
+  <ul>
+    <li *ngFor="let animal of animals">
+      Nome: <a routerLink="/list/{{ animal.id }}">{{ animal.name }}</a> - Tipo:
+      {{ animal.type }}
+      <button (click)="showAge(animal)">Show age</button>
+      <button (click)="removeAnimal(animal)">Excluir</button>
+    </li>
+  </ul>
+
+  <p>{{ animalDetails }}</p>
+</div>

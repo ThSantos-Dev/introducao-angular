@@ -1,0 +1,12 @@
+<div class="class">
+  <p>Contador: {{ count }}</p>
+  <button (click)="incrementCount()">Incrementar</button>
+  <button (click)="decrementCount()">decrementar</button><br>
+
+  <span *ngIf="count > 10">Boa, passou de 10</span>
+
+
+  <h3>Vamos alterar com o evento, diretamente</h3>
+  <p *ngIf="canShowMessage">Essa mensagem foi exibida</p><br>
+  <button (click)="showMessage()">Mostrar/Ocultar</button>
+</div>

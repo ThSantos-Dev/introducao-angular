@@ -1,0 +1,11 @@
+<div class="class" *ngIf="animal; else loader">
+  <h1>{{ animal.name }}</h1>
+  <p>{{ animal.name }} tem {{ animal.age }} anos e é um {{ animal.type }}.</p>
+</div>
+
+<ng-template #loader>
+  <img
+    src="https://media.tenor.com/wXTO9bFFJXMAAAAC/loading-slow-internet.gif"
+    alt=""
+  />
+</ng-template>

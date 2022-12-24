@@ -1,0 +1,12 @@
+<div class="class">
+  <div>
+    <!-- Rendirando um conteúdo com base no atributo da classe -->
+    <span *ngIf="canShow; else notShow">Estou mostrando porquê dá</span> <br>
+    <button (click)="handleVisibility()">Mostrar/Ocultar</button>
+  </div>
+
+  <!-- Será exibido esse conteudo caso seja false, literalmente um else! -->
+  <ng-template #notShow>
+    O contéudo foi ocultado!
+  </ng-template>
+</div>
